@@ -1,3 +1,21 @@
+<html>
+
+<head>
+    <style>
+body {
+    background-color: #11111D;
+}
+h1, h2, h3, h4, p, ul {
+  color: #85ACD2;
+  font-family: Verdana, sans-serif;
+}
+a {
+  color: hotpink;
+}
+    </style>
+
+</head>
+<body>
 
 <center>
     <img src="logos/Bit34Logo.png" alt="Bit34" width="150"/>
@@ -15,7 +33,7 @@
         <td>
             <h3>Package Manager</h3>
             <p>
-Unity does not support some neccesary features (like packages with git dependencies). This tool will be a temporary solution until Unity implementes them.
+Unity does not support some neccesary features like packages with git dependencies. This tool will be a temporary solution until Unity implementes them.
             </p>
             <p>
                 <h4>
@@ -28,17 +46,51 @@ Unity does not support some neccesary features (like packages with git dependenc
                         <li>Assets/Bit34/Packages.meta</li>
                     </ul>
                     <li>Add your packages to Assets/Bit34/repositories.json our file is given below</li>
-                    <li>Add your dependencies to Assets/Bit34/dependencies.json</li>
-                    <li>Everytime you modify dependencies.json press Relaod button (and wait a little).</li>
+                    <textarea name="repositories" rows="6" cols="72">
+{
+    "packages" : [
+        {
+            "name" : "com.bit34games.injector",
+            "url" : "git@github.com:bit34/Bit34-Injector-UPM.git"
+        },
+        {
+            "name" : "com.bit34games.time",
+            "url" : "git@github.com:bit34/Bit34-TimeManager-UPM.git"
+        },
+        {
+            "name" : "com.bit34games.director",
+            "url" : "git@github.com:bit34/Bit34-Director-UPM.git"
+        },
+        {
+            "name" : "com.bit34games.presenter",
+            "url" : "git@github.com:bit34/Bit34-Presenter-UPM.git"
+        },
+        {
+            "name" : "com.bit34games.graph",
+            "url" : "git@github.com:bit34/Bit34-Graph-UPM.git"
+        }
+    ]
+}
+                    </textarea>
+                    <li>Add your dependencies to Assets/Bit34/dependencies.json, an example given below</li>
+                    <textarea name="dependencies" rows="6" cols="72">
+{
+    "dependencies":
+    {
+        "com.bit34games.director": "1.2.0"
+    }
+}
+                    </textarea>
+                    </li>
                 </ul>
             </p>
+
+
             <p>
-                Our repositories.json file:
-                <br/>
-            <iframe src="repositories.json" title="Repositories fiel for Bit34 packages" width="600"></iframe>
+                <a href="https://github.com/bit34/Bit34-Injector-UPM" target="_blank">Unity package</a>
             </p>
             <p>
-                <a href="https://github.com/bit34/Bit34-Injector-UPM">Unity package</a>
+                <a href="repositories.json" target="_blank">repositories.json</a>
             </p>
         </td>
     </tr>
@@ -60,16 +112,16 @@ This is a simple dependency injection library with a small set of features.
 It is primarily developed to be used in conjunction with our other libraries. Its simple nature also makes it an easy point to start learning DI.
             </p>
             <p>
-                <a href="https://github.com/bit34/Bit34-Injector">Source</a>
+                <a href="https://github.com/bit34/Bit34-Injector" target="_blank">Source</a>
             </p>
             <p>
-                <a href="https://github.com/bit34/Bit34-Injector-UPM">Unity package</a>
+                <a href="https://github.com/bit34/Bit34-Injector-UPM" target="_blank">Unity package</a>
             </p>
             <p>
-                <a href="https://github.com/bit34/Bit34-Injector-UnityExamples">Unity Examples<a>
+                <a href="https://github.com/bit34/Bit34-Injector-UnityExamples" target="_blank">Unity Examples<a>
             </p>
             <p>
-                <a href="https://www.nuget.org/packages/Com.Bit34Games.Injector">Nuget package</a>
+                <a href="https://www.nuget.org/packages/Com.Bit34Games.Injector" target="_blank">Nuget package</a>
             </p>
         </td>
     </tr>
@@ -89,10 +141,10 @@ This is an MVP (Model-View-Presenter) architectural pattern library.
 If you want to organize your projects with an architectural pattern and are looking for a library that is relatively simple and easy to learn, then this is for you.
             </p>
             <p>
-                <a href="https://github.com/bit34/Bit34-Director">Source</a>
+                <a href="https://github.com/bit34/Bit34-Director" target="_blank">Source</a>
             </p>
             <p>
-                <a href="https://github.com/bit34/Bit34-Director-UPM">Unity package</a>
+                <a href="https://github.com/bit34/Bit34-Director-UPM" target="_blank">Unity package</a>
             </p>
         </td>
     </tr>
@@ -103,7 +155,7 @@ If you want to organize your projects with an architectural pattern and are look
 <table border="0">
     <tr>
         <td valign="top">
-            <img src="logos/TimeLogo.png" alt="Time Manager" width="100"/>
+            <img src="logos/TimeManagerLogo.png" alt="Time Manager" width="100"/>
         </td>
         <td>
             <h3>Time Manager</h3>
@@ -117,13 +169,13 @@ This is a minimal time library with scheduled callbacks. With this library you c
                 </ul>
             </p>
             <p>
-                <a href="https://github.com/bit34/Bit34-TimeManager">Source</a>
+                <a href="https://github.com/bit34/Bit34-TimeManager" target="_blank">Source</a>
             </p>
             <p>
-                <a href="https://github.com/bit34/Bit34-TimeManager-UPM">Unity package</a>
+                <a href="https://github.com/bit34/Bit34-TimeManager-UPM" target="_blank">Unity package</a>
             </p>
             <p>
-                <a href="https://www.nuget.org/packages/Com.Bit34Games.Time">Nuget package</a>
+                <a href="https://www.nuget.org/packages/Com.Bit34Games.Time" target="_blank">Nuget package</a>
             </p>
         </td>
     </tr>
@@ -132,3 +184,5 @@ This is a minimal time library with scheduled callbacks. With this library you c
 <hr/>
 
 
+</body>
+</html>
