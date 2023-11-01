@@ -13,41 +13,43 @@ a {
   color: hotpink;
 }
     </style>
-
 </head>
 <body>
 
-<center>
-    <img src="logos/Bit34Logo.png" alt="Bit34" width="150"/>
-    <h1>BIT34 GAMES</h1>
-    <h2>Games, Tools and Consulting</h2>
-</center>
+    <center>
+        <img src="logos/Bit34Logo.png" alt="Bit34" width="150"/>
+        <h1>BIT34 GAMES</h1>
+        <h2>Games, Tools and Consulting</h2>
+    </center>
 
-<h2>TOOLS</h2>
+    <h2>TOOLS</h2>
 
-<table border="0">
-    <tr>
-        <td valign="top">
-            <img src="logos/PackageManagerLogo.png" alt="Package Manager" width="100"/>
-        </td>
-        <td>
-            <h3>Package Manager</h3>
-            <p>
+    <table border="0">
+        <tr>
+            <td valign="top">
+                <img src="logos/PackageManagerLogo.png" alt="Package Manager" width="100"/>
+            </td>
+            <td>
+                <h3>Package Manager</h3>
+                <p>
 Unity does not support some neccesary features like packages with git dependencies. This tool will be a temporary solution until Unity implementes them.
-            </p>
-            <p>
-                <h4>
-                    Usage:
-                </h4>
-                <ul>
-                    <li>Add this two lines to your .gitignore</li>
-                    <ul>
-                        <li>Assets/Bit34/Packages/</li>
-                        <li>Assets/Bit34/Packages.meta</li>
-                    </ul>
-                    <li>Add your packages to Assets/Bit34/repositories.json our file is given below</li>
-<textarea name="repositories" rows="6" cols="72">
-{
+                </p>
+                <p>
+                    <h4>Usage:</h4>
+
+                    <p>
+Add Bit34 Package Manager to tour project
+                        <ul>
+                            <li>You can open Unity Package Manager, click plus button, add this url to textbox</li>
+                            <textarea name="repositories" rows="1" cols="80">https://github.com/bit34/Bit34-PackageManager-UPM.git</textarea>
+                            <li>Or add following line directly to your Packages/manifest.json file</li>
+                            <textarea name="repositories" rows="2" cols="80">    "com.bit34games.packagemanager": "https://github.com/bit34/Bit34-PackageManager-UPM.git",</textarea>
+                        </ul>
+                    </p>
+
+                    <p>
+Add your packages to Assets/Bit34/repositories.json our file is given below
+                        <textarea name="repositories" rows="10" cols="80">{
     "packages" : [
         {
             "name" : "com.bit34games.injector",
@@ -70,119 +72,139 @@ Unity does not support some neccesary features like packages with git dependenci
             "url" : "https://github.com/bit34/Bit34-Graph-UPM.git"
         }
     ]
-}
-                    </textarea>
-                    <li>Add your dependencies to Assets/Bit34/dependencies.json, an example given below</li>
-<textarea name="dependencies" rows="6" cols="72">
-{
+}</textarea>
+                </p>
+
+                <p>
+Add your dependencies to Assets/Bit34/dependencies.json, like in the example given below
+                    <textarea name="dependencies" rows="6" cols="80">{
     "dependencies":
     {
         "com.bit34games.director": "1.2.0"
     }
-}
-</textarea>
-                    </li>
-                </ul>
-            </p>
+}</textarea>
+                </p>
+                <p>
+Everytime you modify the Assets/Bit34/dependencies.json press Reload button (and wait a little for changes to take affect)
+                </p>
 
+                <p>
+To prevent your project's git interfering with libraries add this two lines to your .gitignore file
+                    <ul>
+                        <li>Assets/Bit34/Packages/</li>
+                        <li>Assets/Bit34/Packages.meta</li>
+                    </ul>
+                </p>
+                <h4>Downlod:</h4>
+                <p>
+                    <a href="https://github.com/bit34/Bit34-PackageManager-UPM" target="_blank">Unity package</a>
+                </p>
+                <p>
+                    <a href="repositories.json" target="_blank">repositories.json</a>
+                </p>
+            </td>
+        </tr>
+    </table>
 
-            <p>
-                <a href="https://github.com/bit34/Bit34-PackageManager-UPM" target="_blank">Unity package</a>
-            </p>
-            <p>
-                <a href="repositories.json" target="_blank">repositories.json</a>
-            </p>
-        </td>
-    </tr>
-</table>
+    <hr/>
 
-<hr/>
+    <h2>LIBRARIES</h2>
 
-<h2>LIBRARIES</h2>
-
-<table border="0">
-    <tr>
-        <td valign="top">
-            <img src="logos/InjectorLogo.png" alt="Injector" width="100"/>
-        </td>
-        <td>
-            <h3>Injector</h3>
-            <p>
+    <table border="0">
+        <tr>
+            <td valign="top">
+                <img src="logos/InjectorLogo.png" alt="Injector" width="100"/>
+            </td>
+            <td>
+                <h3>Injector</h3>
+                <p>
 This is a simple dependency injection library with a small set of features. 
 It is primarily developed to be used in conjunction with our other libraries. Its simple nature also makes it an easy point to start learning DI.
-            </p>
-            <p>
-                <a href="https://github.com/bit34/Bit34-Injector" target="_blank">Source</a>
-            </p>
-            <p>
-                <a href="https://github.com/bit34/Bit34-Injector-UPM" target="_blank">Unity package</a>
-            </p>
-            <p>
-                <a href="https://github.com/bit34/Bit34-Injector-UnityExamples" target="_blank">Unity Examples<a>
-            </p>
-            <p>
-                <a href="https://www.nuget.org/packages/Com.Bit34Games.Injector" target="_blank">Nuget package</a>
-            </p>
-        </td>
-    </tr>
-</table>
+                </p>
+                <h4>Downlod:</h4>
+                <p>
+                    <a href="https://github.com/bit34/Bit34-Injector" target="_blank">Source</a>
+                </p>
+                <p>
+                    <a href="https://github.com/bit34/Bit34-Injector-UPM" target="_blank">Unity package</a>
+                </p>
+                <p>
+                    <a href="https://github.com/bit34/Bit34-Injector-UnityExamples" target="_blank">Unity Examples<a>
+                </p>
+                <p>
+                    <a href="https://www.nuget.org/packages/Com.Bit34Games.Injector" target="_blank">Nuget package</a>
+                </p>
+            </td>
+        </tr>
+    </table>
 
-<hr/>
+    <hr/>
 
-<table border="0">
-    <tr>
-        <td valign="top">
-            <img src="logos/DirectorLogo.png" alt="Director" width="100"/>
-        </td>
-        <td>
-            <h3>Director</h3>
-            <p>
+    <table border="0">
+        <tr>
+            <td valign="top">
+                <img src="logos/DirectorLogo.png" alt="Director" width="100"/>
+            </td>
+            <td>
+                <h3>Director</h3>
+                <p>
 This is an MVP (Model-View-Presenter) architectural pattern library. 
 If you want to organize your projects with an architectural pattern and are looking for a library that is relatively simple and easy to learn, then this is for you.
-            </p>
-            <p>
-                <a href="https://github.com/bit34/Bit34-Director" target="_blank">Source</a>
-            </p>
-            <p>
-                <a href="https://github.com/bit34/Bit34-Director-UPM" target="_blank">Unity package</a>
-            </p>
-        </td>
-    </tr>
-</table>
+                </p>
+                <h4>Downlod:</h4>
+                <p>
+                    <a href="https://github.com/bit34/Bit34-Director" target="_blank">Source</a>
+                </p>
+                <p>
+                    <a href="https://github.com/bit34/Bit34-Director-UPM" target="_blank">Unity package</a>
+                </p>
+            </td>
+        </tr>
+    </table>
 
-<hr/>
+    <hr/>
 
-<table border="0">
-    <tr>
-        <td valign="top">
-            <img src="logos/TimeManagerLogo.png" alt="Time Manager" width="100"/>
-        </td>
-        <td>
-            <h3>Time Manager</h3>
-            <p>
+    <table border="0">
+        <tr>
+            <td valign="top">
+                <img src="logos/TimeManagerLogo.png" alt="Time Manager" width="100"/>
+            </td>
+            <td>
+                <h3>Time Manager</h3>
+                <p>
 This is a minimal time library with scheduled callbacks. With this library you can;
-                <ul>
-                    <li>Add callbacks to be called every application tick</li>
-                    <li>Add callbacks to be called after given interval</li>
-                    <li>Auto remove callbacks after given call count</li>
-                    <li>Pause, resume and remove callback individualy or by their owner key</li>
-                </ul>
-            </p>
-            <p>
-                <a href="https://github.com/bit34/Bit34-TimeManager" target="_blank">Source</a>
-            </p>
-            <p>
-                <a href="https://github.com/bit34/Bit34-TimeManager-UPM" target="_blank">Unity package</a>
-            </p>
-            <p>
-                <a href="https://www.nuget.org/packages/Com.Bit34Games.Time" target="_blank">Nuget package</a>
-            </p>
-        </td>
-    </tr>
-</table>
+                    <ul>
+                        <li>Add callbacks to be called every application tick</li>
+                        <li>Add callbacks to be called after given interval</li>
+                        <li>Auto remove callbacks after given call count</li>
+                        <li>Pause, resume and remove callback individualy or by their owner key</li>
+                    </ul>
+                </p>
+                <h4>Downlod:</h4>
+                <p>
+                    <a href="https://github.com/bit34/Bit34-TimeManager" target="_blank">Source</a>
+                </p>
+                <p>
+                    <a href="https://github.com/bit34/Bit34-TimeManager-UPM" target="_blank">Unity package</a>
+                </p>
+                <p>
+                    <a href="https://www.nuget.org/packages/Com.Bit34Games.Time" target="_blank">Nuget package</a>
+                </p>
+            </td>
+        </tr>
+    </table>
 
-<hr/>
+    <hr/>
 
+    <h2>CONTACT</h2>
 
-</body>
+    <table border="0">
+        <tr>
+            <td valign="top">
+                <a href="https://www.linkedin.com/in/oguzsan/" target="_blank"><img src="logos/linkedinLogo.png" alt="Linkedin" width="70"/></a>
+            </td>
+        </tr>
+    </table>
+
+    </body>
 </html>
