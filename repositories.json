@@ -2,23 +2,23 @@
     "packages" : [
         {
             "name" : "com.bit34games.injector",
-            "url" : "git@github.com:bit34/Bit34-Injector-UPM.git"
+            "url" : "https://github.com/bit34/Bit34-Injector-UPM.git"
         },
         {
             "name" : "com.bit34games.time",
-            "url" : "git@github.com:bit34/Bit34-TimeManager-UPM.git"
+            "url" : "https://github.com/bit34/Bit34-TimeManager-UPM.git"
         },
         {
             "name" : "com.bit34games.director",
-            "url" : "git@github.com:bit34/Bit34-Director-UPM.git"
+            "url" : "https://github.com/bit34/Bit34-Director-UPM.git"
         },
         {
             "name" : "com.bit34games.presenter",
-            "url" : "git@github.com:bit34/Bit34-Presenter-UPM.git"
+            "url" : "https://github.com/bit34/Bit34-Presenter-UPM.git"
         },
         {
             "name" : "com.bit34games.graph",
-            "url" : "git@github.com:bit34/Bit34-Graph-UPM.git"
+            "url" : "https://github.com/bit34/Bit34-Graph-UPM.git"
         }
     ]
 }
