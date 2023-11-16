@@ -13,10 +13,6 @@
             "url" : "https://github.com/bit34/Bit34-Director-UPM.git"
         },
         {
-            "name" : "com.bit34games.presenter",
-            "url" : "https://github.com/bit34/Bit34-Presenter-UPM.git"
-        },
-        {
             "name" : "com.bit34games.graph",
             "url" : "https://github.com/bit34/Bit34-Graph-UPM.git"
         }

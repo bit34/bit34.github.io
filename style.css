@@ -1,0 +1,14 @@
+body {
+    background-color: #11111D;
+}
+h1, h2, h3, h4, p, ul {
+  color: #85ACD2;
+  font-family: Verdana, sans-serif;
+}
+a {
+  color: hotpink;
+}
+table {
+    width: 800px;
+    border: 0px;
+}
