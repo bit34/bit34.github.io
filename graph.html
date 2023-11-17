@@ -12,10 +12,8 @@ This is a minimal graph library.
             <p>
                 <h4>Features & Design Decisions:</h4>
                 <ul>
-                    <li>Graph class with basic functionality</li>
-                    <li>GridGraph (Graph child class) for regular structured graphs</li>
-                    <li>RectGraph (GridGraph child class) for handling rectangular grids with all graph functionality</li>
-                    <li>Agent class with basic path finding</li>
+                    <li>Graph base rectangle data; Most games with grid based data structures requires features like cell adjecency info, path finding so using graph as a base class for grids is quite useful.</li>
+                    <li>No casting; Using generic base classes removes neccesity to cast graph elements</li>
                 </ul>
             </p>
 

@@ -5,35 +5,50 @@
     <script src="jquery-3.7.1.min.js"></script>
     <script> 
     $(function(){ $("#packagemanagerContent").load("packagemanager.html"); });
+
     $(function(){ $("#injectorContent"      ).load("injector.html"); });
     $(function(){ $("#directorContent"      ).load("director.html"); });
     $(function(){ $("#timemanagerContent"   ).load("timemanager.html"); });
     $(function(){ $("#graphContent"         ).load("graph.html"); });
+    
     $(function(){ $("#contactContent"       ).load("contact.html"); });
     </script> 
 </head>
 <body>
+
+    <div class="navbar">
+        <a href="#tools">Tools</a>
+        <a href="#libraries">Libraries</a>
+        <a href="#contact">Contact</a>
+      </div>
+      
 <center>
     <img src="logos/Bit34Logo.png" alt="Bit34" width="150"/>
     <h1>BIT34 GAMES</h1>
     <h2>Games, Tools and Consulting</h2>
 
-    <h2>TOOLS</h2>
-    <div id="packagemanagerContent"></div>
-    <hr/>
+    <div id="tools">
+        <h2>TOOLS</h2>
+        <div id="packagemanagerContent"></div>
+        <hr/>
+    </div>
 
-    <h2>LIBRARIES</h2>
-    <div id="injectorContent"></div>
-    <hr/>
-    <div id="directorContent"></div>
-    <hr/>
-    <div id="timemanagerContent"></div>
-    <hr/>
-    <div id="graphContent"></div>
-    <hr/>
+    <div id="libraries">
+        <h2>LIBRARIES</h2>
+        <div id="injectorContent"></div>
+        <hr/>
+        <div id="directorContent"></div>
+        <hr/>
+        <div id="timemanagerContent"></div>
+        <hr/>
+        <div id="graphContent"></div>
+        <hr/>
+    </div>
 
-    <h2>CONTACT</h2>
-    <div id="contactContent"></div>
+    <div id="contact">
+        <h2>CONTACT</h2>
+        <div id="contactContent"></div>
+    </div>
     
 </center>
 </body>

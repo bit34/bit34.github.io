@@ -1,14 +1,49 @@
-body {
+body
+{
     background-color: #11111D;
+    margin-top: 50px;
 }
-h1, h2, h3, h4, p, ul {
+
+h1, h2, h3, h4, p, ul
+{
   color: #85ACD2;
   font-family: Verdana, sans-serif;
 }
-a {
+
+a
+{
   color: hotpink;
 }
-table {
+
+table
+{
     width: 800px;
     border: 0px;
+}
+
+.navbar
+{
+    overflow: hidden;
+    background-color: #11111D;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Verdana, sans-serif;
+}
+
+.navbar a:hover
+{
+  background: #ddd;
+  color: black;
 }
