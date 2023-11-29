@@ -13,27 +13,27 @@ Unity does not support packages with git dependencies and this prevents you from
                 <h4>Setup:</h4>
 
                 <p>
-<i>Add Bit34 Package Manager to your project;</i>
+<i>1 - Add Bit34 Package Manager to your project;</i>
                 </p>
                 <p>
 You can either open Unity Package Manager, click plus button, add this url to textbox
-<textarea name="repositories" rows="1" cols="80">https://github.com/bit34/Bit34-PackageManager-UPM.git</textarea>
+<textarea name="repositories" style="width: 680px; height: 26px; resize: none;">https://github.com/bit34/Bit34-PackageManager-UPM.git</textarea>
                 </p>
                 <p>
 Or add following line directly to your Packages/manifest.json file
-<textarea name="repositories" rows="2" cols="80">"com.bit34games.packagemanager": "https://github.com/bit34/Bit34-PackageManager-UPM.git",</textarea>
+<textarea name="repositories" style="width: 680px; height: 42px; resize: none;">"com.bit34games.packagemanager": "https://github.com/bit34/Bit34-PackageManager-UPM.git",</textarea>
                 </p>
 
                 <p>
-<i>Define your packages;</i>
+<i>2 - Define your packages;</i>
                 </p>
                 <p>
-Save your package list file at this location under your unity project : Assets/Bit34/repositories.json
+Save your package list file at this location under your unity project : </br>Assets/Bit34/repositories.json
                 </p>
                 <p>
 Our file is given below
 </br>
-<textarea name="repositories" rows="10" cols="80">
+<textarea name="repositories" style="width: 680px; height: 330px; resize: none;">
 {
     "packages" : [
         {
@@ -53,30 +53,28 @@ Our file is given below
             "url" : "https://github.com/bit34/Bit34-Graph-UPM.git"
         }
     ]
-}
-</textarea>
+}</textarea>
             </p>
 
             <p>
-<i>Add your dependencies;</i>
+<i>3 - Add your dependencies;</i>
             </p>
             <p>
-Save your dependencies to this location under your unity project : Assets/Bit34/repositories.json
+Save your dependencies to this location under your unity project : </br>Assets/Bit34/repositories.json
 </p>
 <p>
 An example is given below
 </br>
-                <textarea name="dependencies" rows="6" cols="80">
+                <textarea name="dependencies" style="width: 680px; height: 104px; resize: none;">
 {
     "dependencies":
     {
         "com.bit34games.director": "1.2.0"
     }
-}
-</textarea>
+}</textarea>
             </p>
             <p>
-Now you can open Bit34 Package Manager from <b>Bit34</b> button from top bar.
+4 - Now you can open Bit34 Package Manager from <b>Bit34</b> button from top bar.
             </p>
 
 
@@ -85,7 +83,7 @@ Now you can open Bit34 Package Manager from <b>Bit34</b> button from top bar.
             </p>
 
             <p>
-To prevent your project's git interfering with libraries add this two lines to your .gitignore file
+5 - To prevent your project's git interfering with libraries add this two lines to your .gitignore file
                 <ul>
                     <li>Assets/Bit34/Packages/</li>
                     <li>Assets/Bit34/Packages.meta</li>

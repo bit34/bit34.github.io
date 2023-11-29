@@ -24,7 +24,7 @@ table
 .navbar
 {
     overflow: hidden;
-    background-color: #10103c;
+    background-color: #1d1d31;
     position: fixed;
     top: 0;
     width: 100%;
@@ -58,4 +58,11 @@ table
 {
   background: #ddd;
   color: black;
+}
+
+.contacts
+{
+    text-align: center; 
+    vertical-align: middle;
+    height: 100px;
 }
