@@ -24,15 +24,27 @@ table
 .navbar
 {
     overflow: hidden;
-    background-color: #11111D;
+    background-color: #10103c;
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-.navbar a
+.navbar_left
 {
   float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Verdana, sans-serif;
+}
+
+.navbar_right
+{
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;

@@ -10,13 +10,13 @@
 Unity does not support packages with git dependencies and this prevents you from hosting all your packages on Github. This tool is a temporary solution until Unity implementes this.
             </p>
             <p>
-                <h4>Usage:</h4>
+                <h4>Setup:</h4>
 
                 <p>
-Add Bit34 Package Manager to tour project;
+<i>Add Bit34 Package Manager to your project;</i>
                 </p>
                 <p>
-You can open Unity Package Manager, click plus button, add this url to textbox
+You can either open Unity Package Manager, click plus button, add this url to textbox
 <textarea name="repositories" rows="1" cols="80">https://github.com/bit34/Bit34-PackageManager-UPM.git</textarea>
                 </p>
                 <p>
@@ -25,8 +25,15 @@ Or add following line directly to your Packages/manifest.json file
                 </p>
 
                 <p>
-Add your packages to Assets/Bit34/repositories.json our file is given below</br>
-                    <textarea name="repositories" rows="10" cols="80">
+<i>Define your packages;</i>
+                </p>
+                <p>
+Save your package list file at this location under your unity project : Assets/Bit34/repositories.json
+                </p>
+                <p>
+Our file is given below
+</br>
+<textarea name="repositories" rows="10" cols="80">
 {
     "packages" : [
         {
@@ -51,7 +58,14 @@ Add your packages to Assets/Bit34/repositories.json our file is given below</br>
             </p>
 
             <p>
-Add your dependencies to Assets/Bit34/dependencies.json, like in the example given below</br>
+<i>Add your dependencies;</i>
+            </p>
+            <p>
+Save your dependencies to this location under your unity project : Assets/Bit34/repositories.json
+</p>
+<p>
+An example is given below
+</br>
                 <textarea name="dependencies" rows="6" cols="80">
 {
     "dependencies":
@@ -62,10 +76,12 @@ Add your dependencies to Assets/Bit34/dependencies.json, like in the example giv
 </textarea>
             </p>
             <p>
-Now you can open Bit34 Package Manager from "Bit34" button from top bar.
+Now you can open Bit34 Package Manager from <b>Bit34</b> button from top bar.
             </p>
+
+
             <p>
-Everytime you modify the Assets/Bit34/dependencies.json press Reload button (and wait a little for changes to take affect)
+                <i>Git setup;</i>
             </p>
 
             <p>
@@ -74,6 +90,11 @@ To prevent your project's git interfering with libraries add this two lines to y
                     <li>Assets/Bit34/Packages/</li>
                     <li>Assets/Bit34/Packages.meta</li>
                 </ul>
+            </p>
+
+            <h4>Usage:</h4>
+            <p>
+Everytime you modify the Assets/Bit34/dependencies.json press <b>Reload</b> button on package manager window (and wait a little for changes to take affect)
             </p>
 
             <h4>Downlods:</h4>
