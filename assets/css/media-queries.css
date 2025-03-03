@@ -13,6 +13,14 @@
 	.team-box-photo { width: 120px; }
 	.team-box-text { width: 291px; padding-left: 20px; }
 	
+	.tools-box { padding: 20px; }
+	.tools-box-text { width: 100%; padding-left: 20px; }
+	.tools-box-text p {margin-left: 130px; }
+	
+	.libs-box { padding: 20px; }
+	.libs-box-text { width: 100%; padding-left: 20px; }
+	.libs-box-text p {margin-left: 130px; }
+
 	.blog-single-article .blog-title { width: 70%; padding-right: 10px; }
 	.blog-single-article .blog-author { width: 19%; padding-right: 10px; }
 	.blog-single-article .blog-date { width: 11%; }
@@ -48,7 +56,21 @@
     .team p { padding: 0 40px; }
     .team-box-photo { float: none; width: 140px; margin: 0 auto; }
 	.team-box-text { float: none; width: auto; margin-top: 20px; padding: 0; text-align: center; }
-	
+    
+	.tools p { padding: 0 40px; }
+    .tools-box-photo { float: none; width: 140px; margin: 0 auto; }
+	.tools-box-text { float: none; width: auto; margin-top: 20px; padding: 0; text-align: center; }
+	.tools-box-text p { margin-left: 0px; }
+	.tools-box-text h3 { margin-left: 0px; }
+	.tools-box-text .libs-tools-link {margin-left: 0px; }
+
+	.libs p { padding: 0 40px; }
+    .libs-box-photo { float: none; width: 140px; margin: 0 auto; }
+	.libs-box-text { float: none; width: auto; margin-top: 20px; padding: 0; text-align: center; }
+	.libs-box-text p { margin-left: 0px; }
+	.libs-box-text h3 { margin-left: 0px; }
+	.libs-box-text .libs-box-link {margin-left: 0px; }
+
 	.reviews p { padding: 0 40px; }
 	
 	.blog p { padding: 0 40px; }
@@ -99,6 +121,20 @@
 	.team-box-text { float: none; width: auto; margin-top: 20px; padding: 0; text-align: center; }
 	.team-box-text .team-box-social { height: auto; }
 	
+	.tools p { padding: 0; }
+	.tools-box-photo { float: none; width: 140px; margin: 0 auto; }
+	.tools-box-text { float: none; width: auto; margin-top: 20px; padding: 0; text-align: center; }
+	.tools-box-text p { margin-left: 0px; }
+	.tools-box-text h3 { margin-left: 0px; }
+	.tools-box-text .tools-box-link {margin-left: 0px; }
+
+	.libs p { padding: 0; }
+	.libs-box-photo { float: none; width: 140px; margin: 0 auto; }
+	.libs-box-text { float: none; width: auto; margin-top: 20px; padding: 0; text-align: center; }
+	.libs-box-text p { margin-left: 0px; }
+	.libs-box-text h3 { margin-left: 0px; }
+	.libs-box-text .libs-box-link {margin-left: 0px; }
+
 	.reviews p { padding: 0; }
 	
 	.blog p { padding: 0; }
@@ -159,7 +195,7 @@
 	
 	.top-content-text h1 { font-size: 30px; line-height: 36px; }
 	.top-content-text h1 span.top-content-text-big { font-size: 32px; line-height: 38px; }
-	.portfolio h2, .team h2, .reviews h2, .blog h2, .project-valuation h2, .contact-us h2 { font-size: 32px; line-height: 50px; }
+	.portfolio h2, .team h2, .tools h2, .libs h2, .reviews h2, .blog h2, .project-valuation h2, .contact-us h2 { font-size: 32px; line-height: 50px; }
 	
 }
 

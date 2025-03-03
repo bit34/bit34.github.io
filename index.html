@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/media-queries.css">
 
+        <link rel="stylesheet" href="assets/css/typewriter.css">
+
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -33,55 +35,20 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72"   href="assets/ico2/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed"                 href="assets/ico2/apple-touch-icon-57-precomposed.png">
 
-		<style>
-#TypeWriterContainer
-{
-	margin-top: 200px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 390px;
-	height: 230px;
-	
-}
-#TypeWriterStaticText
-{
-	font-family: 'signikalight', sans-serif;
-	font-size: 50px;
-	font-weight: 900;
-	color: #ffffff;
-	line-height: 50px;
-	text-align: center;
-	text-shadow: 0 2px 0 rgba(8, 8, 8, 0.4);
-	text-transform: uppercase;
-}
-
-#TypeWriterText
-{
-	font-family: 'signikalight', sans-serif;
-	font-size: 50px;
-	font-weight: 900;
-	color: #ffffff;
-	line-height: 50px;
-	text-align: center;
-	text-shadow: 0 2px 0 rgba(8, 8, 8, 0.4);
-	text-transform: uppercase;
-}
-
-#StaticText
-{
-	font-family: 'signikalight', sans-serif;
-	font-size: 36px;
-	font-weight: 900;
-	color: #bdbdbd;
-	line-height: 36px;
-	text-align: center;
-	text-shadow: 0 2px 0 rgba(8, 8, 8, 0.4);
-}
-		</style>
+		<script>
+			function UpdateResolutionText()
+			{
+				document.getElementById("resolution-text").innerHTML = window.innerWidth + "x" + window.innerHeight;
+			}
+			window.addEventListener('resize', UpdateResolutionText);
+			window.addEventListener('load', UpdateResolutionText);
+		</script>
     </head>
 
     <body onload="StartTypeWriter()">
-
+<div id="resolution-text" style="position: fixed; bottom: 0; background-color: darkgoldenrod; z-index: 999; visibility: hidden;">
+Resolution
+</div>
 		<!-- Top menu -->
 		<nav>
 			<div class="container">
@@ -113,10 +80,10 @@
 
 		<div class="video-overlaycontent">
 			<div id="TypeWriterContainer">
-				<p id="TypeWriterStaticText">WE LOVE</p>
+				<p id="TypeWriterPreText">WE LOVE</p>
 				<p id="TypeWriterText"></p>
 			</div>
-			<p id="StaticText">Join us on our journey</p>
+			<p id="TypeWriterPostText">Join us on our journey</p>
 		</div>
 
 
@@ -278,7 +245,7 @@
 		                		<p>This is a minimal time library with scheduled callbacks. It supports callbacks on every frame or with time interval, auto callback removing after call count, and pause and resume for all or part of callbakcs. </p>
 		                		<div class="libs-box-link">
 									<div>
-										<a href="https://bit34.notion.site/71df68ff62464b05b842da302f0cc37d?v=b3e9e3beb2764f8da2c0afb48b0bee56&pvs=4" target="_blank">Roadmap</a>
+										<a class="button-link" href="https://bit34.notion.site/71df68ff62464b05b842da302f0cc37d?v=b3e9e3beb2764f8da2c0afb48b0bee56&pvs=4" target="_blank">Roadmap</a>
 									</div>
 		                			<div>
 										<a class="button-link" href="https://github.com/bit34/Bit34-TimeManager" target="_blank">Source</a>
@@ -361,55 +328,11 @@
         <script src="assets/js/scripts.js"></script>
         <script src="assets/js/retina-1.1.0.min.js"></script>
 
+        <script src="assets/js/typewriter.js"></script>
+
 		<!--[if lt IE 10]>
             <script src="assets/js/placeholder.js"></script>
         <![endif]-->
-		<script>
-			var stringList   = ['making games', 
-								'playing games', 
-								'making games we love to play'];
-			var stringIndex  = 0;
-			var charIndex    = 0;
-			var writeSpeed   = 50;
-			var readDuration = 1000;
-			var eraseSpeed   = 20;
-			var waitDuration = 500;
-
-			function StartTypeWriter()
-			{
-				WriteText();
-			}
-			
-			function WriteText()
-			{
-				charIndex++;
-				if (charIndex < stringList[stringIndex].length)
-				{
-					document.getElementById("TypeWriterText").innerHTML = stringList[stringIndex].substring(0, charIndex+1);
-					setTimeout(WriteText, writeSpeed);
-				}
-				else
-				{
-					setTimeout(EraseText, readDuration);
-				}
-			}
-			
-			function EraseText()
-			{
-				charIndex--;
-				document.getElementById("TypeWriterText").innerHTML = stringList[stringIndex].substring(0, charIndex);
-				if (charIndex>0)
-				{
-					setTimeout(EraseText, eraseSpeed);
-				}
-				else
-				{
-					stringIndex = (stringIndex+1) % stringList.length;
-					setTimeout(WriteText, waitDuration);
-				}
-			}
-			
-			</script>
     </body>
 
 </html>

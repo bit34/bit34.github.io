@@ -1,0 +1,44 @@
+
+#TypeWriterContainer
+{
+	margin-top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 390px;
+	height: 230px;
+	
+}
+#TypeWriterPreText
+{
+	font-family: 'signikalight', sans-serif;
+	font-size: 50px;
+	font-weight: 900;
+	color: #ffffff;
+	line-height: 50px;
+	text-align: center;
+	text-shadow: 0 2px 0 rgba(8, 8, 8, 0.4);
+	text-transform: uppercase;
+}
+
+#TypeWriterText
+{
+	font-family: 'signikalight', sans-serif;
+	font-size: 50px;
+	font-weight: 900;
+	color: #ffffff;
+	line-height: 50px;
+	text-align: center;
+	text-shadow: 0 2px 0 rgba(8, 8, 8, 0.4);
+	text-transform: uppercase;
+}
+
+#TypeWriterPostText
+{
+	font-family: 'signikalight', sans-serif;
+	font-size: 36px;
+	font-weight: 900;
+	color: #bdbdbd;
+	line-height: 36px;
+	text-align: center;
+	text-shadow: 0 2px 0 rgba(8, 8, 8, 0.4);
+}
