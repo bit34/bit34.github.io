@@ -175,10 +175,11 @@
     }
     
     /* logo */
+/*
     nav .nav-logo a {
-    	background-image: url(../img/logo@2x.png) !important; background-repeat: no-repeat !important; background-size: 134px 43px !important;
+    	background-image: url(../img2/logo@2x.png) !important; background-repeat: no-repeat !important; background-size: 350px 60px !important;
     }
-    
+*/    
     /* show menu */
     nav .show-menu span {
     	background-image: url(../img/icons/menu@2x.png) !important; background-repeat: no-repeat !important; background-size: 28px 28px !important;
