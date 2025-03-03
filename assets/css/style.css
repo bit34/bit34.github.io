@@ -924,21 +924,24 @@ footer .footer-right {
 	left: 0;
 	margin: auto;
 
-	min-width: 100%;
 	height: 600px;
+	min-width: 100%; 
 
 	z-index: -999;
     background: #3b404d;
-	object-fit: contain;
-	overflow-clip-margin: content-box;
-	overflow: hidden;
 }
 
 .video-content
 {
-	display: flex;
+	width: 100%; 
+	min-height: 100%;
+
 	margin: 0 auto;
 	justify-content: center;
+
+	overflow-clip-margin: content-box;
+	overflow: hidden;
+	object-fit: contain;
 }
 
 .video-overlaycontent
