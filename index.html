@@ -1,60 +1,416 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-<head>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script> 
-    $(function(){ $("#packagemanagerContent").load("packagemanager.html"); });
+    <head>
 
-    $(function(){ $("#injectorContent"      ).load("injector.html"); });
-    $(function(){ $("#directorContent"      ).load("director.html"); });
-    $(function(){ $("#timemanagerContent"   ).load("timemanager.html"); });
-    $(function(){ $("#graphContent"         ).load("graph.html"); });
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bit34 Games</title>
 
-    $(function(){ $("#contactContent"       ).load("contact.html"); });
-    </script>
-    <title>Bit34 Games</title>
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-</head>
-<body>
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/fonts/fonts.css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/select2.css">
+        <link rel="stylesheet" href="assets/css/gray.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/buttons.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media-queries.css">
 
-    <div class="navbar">
-        <a class="navbar_left" href="#tools">Tools</a>
-        <a class="navbar_left" href="#libraries">Libraries</a>
-        <a class="navbar_left" href="#contact">Contact</a>
-        <a class="navbar_right" href="https://discord.gg/K8PfUSts" target="_blank"><img src="logos/DiscordLogo.png" alt="Discord" width="110"/></a>
-      </div>
-      
-<center>
-    <img src="logos/Bit34Logo.png" alt="Bit34" width="150"/>
-    <h1>BIT34 GAMES</h1>
-    <h2>Games, Tools and Consulting</h2>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon"                                href="assets/ico2/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico2/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico2/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72"   href="assets/ico2/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed"                 href="assets/ico2/apple-touch-icon-57-precomposed.png">
 
-    <div id="tools">
-        <h2>TOOLS</h2>
-        <div id="packagemanagerContent"></div>
-        <hr/>
-    </div>
+		<style>
+#TypeWriterContainer
+{
+	margin-top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 570px;
+	height: 230px;
+	
+}
+#TypeWriterStaticText
+{
+	font-family: 'signikalight', sans-serif;
+	font-size: 72px;
+	font-weight: 900;
+	color: #ffffff;
+	line-height: 72px;
+	text-align: center;
+	text-shadow: 0 2px 0 rgba(8, 8, 8, 0.4);
+	text-transform: uppercase;
+}
 
-    <div id="libraries">
-        <h2>LIBRARIES</h2>
-        <div id="injectorContent"></div>
-        <hr/>
-        <div id="directorContent"></div>
-        <hr/>
-        <div id="timemanagerContent"></div>
-        <hr/>
-        <div id="graphContent"></div>
-        <hr/>
-    </div>
+#TypeWriterText
+{
+	font-family: 'signikalight', sans-serif;
+	font-size: 72px;
+	font-weight: 900;
+	color: #ffffff;
+	line-height: 72px;
+	text-align: center;
+	text-shadow: 0 2px 0 rgba(8, 8, 8, 0.4);
+	text-transform: uppercase;
+}
 
-    <div id="contact">
-        <h2>CONTACT</h2>
-        <div id="contactContent"></div>
-    </div>
-    
-</center>
-</body>
+#StaticText
+{
+	font-family: 'signikalight', sans-serif;
+	font-size: 36px;
+	font-weight: 900;
+	color: #bdbdbd;
+	line-height: 36px;
+	text-align: center;
+	text-shadow: 0 2px 0 rgba(8, 8, 8, 0.4);
+}
+		</style>
+    </head>
+
+    <body onload="StartTypeWriter()">
+
+		<!-- Top menu -->
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2 nav-logo">
+						<a href="">Bit343 Games</a>
+					</div>
+					<div class="col-sm-10 nav-links">
+						<a class="scroll-link button-1 active" href="#top-content">Home</a>
+						<a class="scroll-link button-1" href="#games">Games</a>
+						<a class="scroll-link button-1" href="#tools">Tools for Devs</a>
+						<a class="scroll-link button-1" href="#libs">Libs for Devs</a>
+						<a class="scroll-link button-1" href="#contact-us">Contact</a>
+						<div class="show-menu"><span></span></div>
+					</div>
+				</div>
+			</div>
+		</nav>
+        <!-- Top content -->
+
+		<div class="video-container">
+			<video autoplay muted loop class="video-content">
+				<source src="assets/intro.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+
+
+
+		<div class="video-overlaycontent">
+			<div id="TypeWriterContainer">
+				<p id="TypeWriterStaticText">WE LOVE</p>
+				<p id="TypeWriterText"></p>
+			</div>
+			<p id="StaticText">Join us on our journey</p>
+		</div>
+
+
+
+		<!-- Games -->
+        <div class="games-container">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 team">
+	                    <h2>Games</h2>
+	                    <p>These are all the games we publish.</p>
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-sm-12">
+	                	<div class="games-box">
+		                	<div class="games-box-photo"><img src="assets/img2/games/unknown.png" alt="" data-at2x="assets/img2/games/unknown.png"></div>
+		                	<div class="games-box-text">
+		                		<h3>TBA</h3>
+		                		<p>TBA...</p>
+								<div class="games-box-link">
+									<div>
+										<div>
+											<a class="button-link" href="" target="_blank">Appstore</a>
+										</div>
+										<div>
+											<a class="button-link" href="" target="_blank">Playstore</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	                </div>
+	            </div>
+	        </div>
+        </div>
+
+ 
+		<!-- Tools -->
+        <div class="tools-container">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 team">
+	                    <h2>Tools for Devs</h2>
+	                    <p>This section contains our publicly available development tools.</p>
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-sm-12">
+	                	<div class="tools-box">
+		                	<div class="tools-box-photo"><img src="assets/img2/tools/PackageManagerLogo.png" alt="" data-at2x="assets/img2/tools/PackageManagerLogo.png"></div>
+		                	<div class="tools-box-text">
+		                		<h3>Package Manager</h3>
+		                		<p>Unity does not support packages with git dependencies and this prevents you from hosting all your packages on Github. This tool is a temporary solution until Unity implementes this.</p>
+								<div class="tools-box-link">
+									<div>
+										<a class="button-link" href="https://github.com/bit34/Bit34-PackageManager-UPM" target="_blank">Unity Package</a>
+									</div>
+								</div>
+							</div>
+						</div>
+	                </div>
+	            </div>
+	        </div>
+        </div>
+
+
+
+		<!-- Libs -->
+        <div class="libs-container">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 team">
+	                    <h2>Libs for Devs</h2>
+	                    <p>This section contains our publicly available C# and Unity3D libraries.</p>
+	                </div>
+	            </div>
+
+	            <div class="row">
+	                <div class="col-sm-12">
+	                	<div class="libs-box">
+		                	<div class="libs-box-photo"><img src="assets/img2/libs/InjectorLogo.png" alt="" data-at2x="assets/img2/libs/InjectorLogo.png"></div>
+		                	<div class="libs-box-text">
+		                		<h3>Injector</h3>
+		                		<p>This is a simple dependency injection library with a small set of features. 
+									It is primarily developed to be used in conjunction with our other libraries. Its simple nature also makes it an easy point to start learning dependency injection.</p>
+		                		<div class="libs-box-link">
+									<div>
+										<a class="button-link"  href="https://bit34.notion.site/206aafdb17c34e1f892f9ec8e9f3e62c?v=928fbc62a3644a9ba2e215a5e8552c91&pvs=4" target="_blank">Roadmap</a>
+									</div>
+		                			<div>
+										<a class="button-link" href="https://github.com/bit34/Bit34-Injector" target="_blank">Source</a>
+									</div>
+		                			<div>
+										<a class="button-link" href="https://github.com/bit34/Bit34-Injector-UPM" target="_blank">Unity Package</a>
+									</div>
+		                			<div>
+										<a class="button-link" href="https://github.com/bit34/Bit34-Injector-UnityExamples" target="_blank">Unity Examples</a>
+									</div>
+		                		</div>
+							</div>
+						</div>
+	                </div>
+	            </div>
+
+	            <div class="row">
+	                <div class="col-sm-12">
+	                	<div class="libs-box">
+		                	<div class="libs-box-photo"><img src="assets/img2/libs/DirectorLogo.png" alt="" data-at2x="assets/img2/libs/DirectorLogo.png"></div>
+		                	<div class="libs-box-text">
+		                		<h3>Director</h3>
+		                		<p>This is an MVP (Model-View-Presenter) architectural pattern library. 
+									If you want to organize your projects with an architectural pattern and are looking for a library that is relatively simple and easy to learn, then this is for you.</p>
+		                		<div class="libs-box-link">
+									<div>
+										<a class="button-link" href="https://bit34.notion.site/01450905cf264dac8b3676d3a5943efd?v=cefd80d2ae3248d3bfeb7b5824615fc4&pvs=4" target="_blank">Roadmap</a>
+									</div>
+		                			<div>
+										<a class="button-link" href="https://github.com/bit34/Bit34-Director" target="_blank">Source</a>
+									</div>
+									<div>
+										<a class="button-link" href="https://github.com/bit34/Bit34-Director-UPM" target="_blank">Unity Package</a>
+									</div>
+		                		</div>
+							</div>
+						</div>
+	                </div>
+	            </div>
+
+	            <div class="row">
+	                <div class="col-sm-12">
+	                	<div class="libs-box">
+		                	<div class="libs-box-photo"><img src="assets/img2/libs/GraphLogo.png" alt="" data-at2x="assets/img2/libs/GraphLogo.png"></div>
+		                	<div class="libs-box-text">
+		                		<h3>Graph</h3>
+		                		<p>This is an experimental graph library. Has a basic path finding implementation. Rectangle and hexagon graph child classes included to ease development of grid base games. </p>
+		                		<div class="libs-box-link">
+		                			<div>
+										<a class="button-link" href="https://github.com/bit34/Bit34-Graph" target="_blank">Source</a>
+									</div>
+									<div>
+										<a class="button-link" href="https://github.com/bit34/Bit34-Graph-UPM" target="_blank">Unity Package</a>
+									</div>
+									<div>
+										<a class="button-link" href="https://github.com/bit34/Bit34-Graph-UnityExamples" target="_blank">Unity Examples</a>
+									</div>
+		                		</div>
+							</div>
+						</div>
+	                </div>
+	            </div>
+
+	            <div class="row">
+	                <div class="col-sm-12">
+	                	<div class="libs-box">
+		                	<div class="libs-box-photo"><img src="assets/img2/libs/TimeManagerLogo.png" alt="" data-at2x="assets/img2/libs/TimeManagerLogo.png"></div>
+		                	<div class="libs-box-text">
+		                		<h3>Time Manager</h3>
+		                		<p>This is a minimal time library with scheduled callbacks. It supports callbacks on every frame or with time interval, auto callback removing after call count, and pause and resume for all or part of callbakcs. </p>
+		                		<div class="libs-box-link">
+									<div>
+										<a href="https://bit34.notion.site/71df68ff62464b05b842da302f0cc37d?v=b3e9e3beb2764f8da2c0afb48b0bee56&pvs=4" target="_blank">Roadmap</a>
+									</div>
+		                			<div>
+										<a class="button-link" href="https://github.com/bit34/Bit34-TimeManager" target="_blank">Source</a>
+									</div>
+									<div>
+										<a class="button-link" href="https://github.com/bit34/Bit34-TimeManager-UPM" target="_blank">Unity Package</a>
+									</div>
+									<div>
+										<a class="button-link" href="https://www.nuget.org/packages/Com.Bit34Games.Time" target="_blank">Nuget Package</a>
+									</div>
+		                		</div>
+							</div>
+						</div>
+	                </div>
+	            </div>
+
+	        </div>
+        </div>
+
+
+		<!-- Contact us -->
+        <div class="contact-us-container">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 contact-us">
+	                    <h2>Contact us</h2>
+	                    <p>You can use the form below for your support requests or any other questions.</p>
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-sm-12 contact-us-form">
+	                	<form action="" method="post">
+	                		<div class="contact-us-form-left">
+	                			<div class="contact-us-input-container">
+		                			<label for="contact-us-name" class="contact-us-name-label"></label>
+		                			<input type="text" id="contact-us-name" name="contact-us-name" placeholder="Name...">
+	                       		</div>
+	                       		<div class="contact-us-input-container">
+		                			<label for="contact-us-email" class="contact-us-email-label"></label>
+		                			<input type="text" id="contact-us-email" name="contact-us-email" placeholder="Email...">
+	                       		</div>
+	                		</div>
+	                		<div class="contact-us-form-right">
+	                			<div class="contact-us-input-container">
+		                			<label for="contact-us-message" class="contact-us-message-label"></label>		                			
+		                			<textarea id="contact-us-message" name="contact-us-message" placeholder="Message..."></textarea>
+	                       		</div>
+	                			<input type="submit" value="Send message">
+	                		</div>
+	                	</form>
+	                </div>
+	            </div>
+	        </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 footer">
+	                	<div class="footer-left">Copyright 2025 Bit34 Games. All rights reserved.</div>
+	                	<div class="footer-right">
+	                		<a class="button-social-2 button-discord-2"   href="https://discord.gg/K8PfUSts" target="_blank"><span>Discord</span></a>
+	                		<a class="button-social-2 button-instagram-2" href="https://www.instagram.com/bit34games/" target="_blank"><span>Instagram</span></a>
+	                	</div>
+	                </div>
+	            </div>
+	        </div>
+        </footer>
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.10.2.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/masonry.pkgd.min.js"></script>
+        <script src="assets/js/jquery.ui.map.min.js"></script>
+        <script src="assets/js/select2.min.js"></script>
+        <script src="assets/js/jquery.gray.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/retina-1.1.0.min.js"></script>
+
+		<!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+		<script>
+			var stringList   = ['making games', 
+								'playing games', 
+								'making games we love to play'];
+			var stringIndex  = 0;
+			var charIndex    = 0;
+			var writeSpeed   = 50;
+			var readDuration = 1000;
+			var eraseSpeed   = 20;
+			var waitDuration = 500;
+
+			function StartTypeWriter()
+			{
+				WriteText();
+			}
+			
+			function WriteText()
+			{
+				charIndex++;
+				if (charIndex < stringList[stringIndex].length)
+				{
+					document.getElementById("TypeWriterText").innerHTML = stringList[stringIndex].substring(0, charIndex+1);
+					setTimeout(WriteText, writeSpeed);
+				}
+				else
+				{
+					setTimeout(EraseText, readDuration);
+				}
+			}
+			
+			function EraseText()
+			{
+				charIndex--;
+				document.getElementById("TypeWriterText").innerHTML = stringList[stringIndex].substring(0, charIndex);
+				if (charIndex>0)
+				{
+					setTimeout(EraseText, eraseSpeed);
+				}
+				else
+				{
+					stringIndex = (stringIndex+1) % stringList.length;
+					setTimeout(WriteText, waitDuration);
+				}
+			}
+			
+			</script>
+    </body>
+
 </html>
+

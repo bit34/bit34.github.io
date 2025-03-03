@@ -1,0 +1,93 @@
+body
+{
+    background-color: #11111D;
+    margin-top: 50px;
+}
+
+h1, h2, h3, h4, p, ul
+{
+  color: #85ACD2;
+  font-family: Verdana, sans-serif;
+}
+
+a
+{
+  color: hotpink;
+}
+
+table
+{
+    width: 800px;
+    border: 0px;
+}
+
+.navbar
+{
+    overflow: hidden;
+    background-color: #1d1d31;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar_icon
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 0px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Verdana, sans-serif;
+}
+
+.navbar_name
+{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Verdana, sans-serif;
+}
+
+.navbar_left
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Verdana, sans-serif;
+}
+
+.navbar_right
+{
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Verdana, sans-serif;
+}
+
+.navbar a:hover
+{
+  background: #ddd;
+  color: black;
+}
+
+.contacts
+{
+    text-align: center; 
+    vertical-align: middle;
+    height: 100px;
+}

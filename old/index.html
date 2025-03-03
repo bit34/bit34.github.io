@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script> 
+    $(function(){ $("#packagemanagerContent").load("packagemanager.html"); });
+
+    $(function(){ $("#injectorContent"      ).load("injector.html"); });
+    $(function(){ $("#directorContent"      ).load("director.html"); });
+    $(function(){ $("#timemanagerContent"   ).load("timemanager.html"); });
+    $(function(){ $("#graphContent"         ).load("graph.html"); });
+
+    $(function(){ $("#contactContent"       ).load("contact.html"); });
+    </script>
+    <title>Bit34 Games</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+</head>
+<body>
+
+    <div class="navbar">
+        <img class="navbar_icon" src="logos/Bit34Logo.png" alt="Bit34" width="50"/>
+        <h1  class="navbar_name">BIT34 GAMES</h1>
+        <a class="navbar_left" href="#tools">Tools</a>
+        <a class="navbar_left" href="#libraries">Libraries</a>
+        <a class="navbar_left" href="#contact">Contact</a>
+        <a class="navbar_right" href="https://discord.gg/K8PfUSts" target="_blank"><img src="logos/DiscordLogo.png" alt="Discord" width="110"/></a>
+      </div>
+      
+<center>
+    <img src="logos/Bit34Logo.png" alt="Bit34" width="150"/>
+    <h1>BIT34 GAMES</h1>
+    <h2>Games, Tools and Consulting</h2>
+
+    <div id="tools">
+        <h2>TOOLS</h2>
+        <div id="packagemanagerContent"></div>
+        <hr/>
+    </div>
+
+    <div id="libraries">
+        <h2>LIBRARIES</h2>
+        <div id="injectorContent"></div>
+        <hr/>
+
+        <div id="directorContent"></div>
+        <hr/>
+
+        <div id="timemanagerContent"></div>
+        <hr/>
+
+        <div id="graphContent"></div>
+        <hr/>
+    </div>
+
+    <div id="contact">
+        <h2>CONTACT</h2>
+        <div id="contactContent"></div>
+    </div>
+    
+</center>
+</body>
+</html>
