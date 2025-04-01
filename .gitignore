@@ -17,10 +17,3 @@ ehthumbs.db
 
 # Visual Studio 2015
 .vs/
-
-# Unity generated
-[Tt]emp/
-[Oo]bj/
-[Bb]uild
-[Bb]uilds/
-[Ll]ibrary/
